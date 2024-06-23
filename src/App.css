@@ -1,38 +1,116 @@
-.App {
+.primaryBtn{
+  background: var(--primaryClr);
+  padding: 8px 15px;
+  font-size: var(--bodyText);
+  color:var(--white);
   text-align: center;
+  position: relative;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.primaryBtn:hover{
+  transform: translateY(-3px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main_heading{
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main_heading h1 {
+  font-size: var(--heading);
+  color:var(--black);
+  font-weight: bold;
+  font-family: var(--fontFamily1);
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.slick_slider .slick-arrow  {
+  z-index: 100;
+  position: absolute;
+  top: 45%;
+  width: 55px;
+  height: 55px;
+  display: block;
+  border-radius: 100%;
+  transition: box-shadow 0.3ms;
+  background: var(--primaryClr);
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.slick_slider .slick-arrow:hover {
+  box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.267);
+  background-color: var(--white);
+}
+
+
+
+.slick_slider .slick-arrow::after,
+.slick_slider .slick-arrow::before
+{
+  content: "";
+  position: absolute;
+  left: 43%;
+  background: var(--white);
+  width: 0.4rem;
+  min-width: 3px;
+  border-radius: 3px;
+  height: 34%;
+}
+
+.slick_slider .slick-arrow:hover{
+  background-color: var(--primaryClr);
+}
+
+.slick_slider .slick-arrow:focus{
+  background-color: var(--primaryClr);
+}
+
+.slick_slider .slick-prev {
+  left: -15px;
+}
+
+.slick_slider .slick-prev::before {
+  transform: rotate(45deg);
+  top: 24%;
+}
+
+.slick_slider .slick-prev::after {
+  transform: rotate(-45deg);
+  bottom: 24%;
+}
+
+.slick_slider .slick-next {
+  right: -15px;
+}
+
+.slick_slider .slick-next::before {
+  left: auto;
+  right: 43%;
+  transform: rotate(-45deg);
+  top: 24%;
+}
+
+.slick_slider .slick-next::after {
+  left: auto;
+  right: 43%;
+  transform: rotate(45deg);
+  bottom: 24%;
+}
+
+.slick_slider .slick-prev span,
+.slick_slider .slick-next span {
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+  .slick_slider .slick-arrow{
+    display: none !important;
   }
 }

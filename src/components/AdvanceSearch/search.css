@@ -1,0 +1,181 @@
+.box-search-advance .box-search {
+    border: 1px solid var(--bgClr);
+    border-radius: 15px;
+    background-color: var(--white);
+    padding: 20px;
+    position: relative;
+    top:-70px;
+    z-index: 12;
+    margin-bottom: -50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.box-search-advance .box-search .item-search {
+    width: 20%;
+    position: relative;
+    padding: 0px 12px;
+}
+
+.box-search-advance .box-search .item-search::before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    width: 1px;
+    height: 58px;
+    background-color: #e4e6e8;
+}
+
+.box-search-advance .box-search .item-search-2{
+    display: inline-block;
+
+}
+
+.box-search-advance .box-search .item-search-2 
+.react-datepicker__input-container{
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+.box-search-advance .box-search .item-search-2 .react-datepicker-wrapper{
+    display: block;
+}
+
+.box-search-advance .box-search .item-search-2 
+.react-datepicker__input-container::before{
+    content: "\f214";
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    font-size: var(--bodyText);
+}
+
+
+.box-search-advance .box-search .item-search-2 
+.react-datepicker__input-container::after{
+    content: "\f282";
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+    font-size: var(--bodyText);
+}
+
+.box-search-advance .box-search .item-search-2 
+.react-datepicker-wrapper input{
+    border: none;
+    padding: 5px 40px 5px 5px;
+    padding-left: 22px !important;
+    line-height: 1.5;
+    width: 100%;
+    font-size: var(--bodyText);
+    font-weight: bold;
+    color:var(--textClr);
+    font-family: "Poppins", sans-serif;
+}
+
+.box-search-advance .box-search .item-search-2 
+.react-datepicker-wrapper input:focus{
+    border: none;
+    outline: none;
+}
+
+.box-search-advance .box-search .item-search .item-search-label {
+    font-size: var(--bodyText);
+    line-height: 22px;
+    color:var(--textClr);
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.box-search-advance .box-search .bd-none::before{
+    display: none;
+}
+
+.box-search-advance .box-search .item-search .primaryBtn {
+    padding: 15px 32px !important;
+    font-size: 16px;
+    line-height: 26px !important;
+    align-items: center;
+    width: fit-content;
+    display: flex;
+    border:none;
+    font-weight: bold;
+}
+.box-search-advance .box-search .item-search .primaryBtn:hover{
+    background-color: var(--primaryClr);
+}
+
+@media (max-width : 1199px){
+    .box-search-advance .box-search {
+        flex-wrap: wrap;
+    }
+    .box-search-advance .box-search .item-search:last-child{
+        width: 100%;
+        justify-content: center !important;
+        padding: 20px;
+    }
+
+    .box-search-advance .box-search .item-search:last-child .primaryBtn{
+        width: 100%;
+        justify-content: center !important;
+    }
+
+    .box-search-advance .box-search .item-search{
+        width: 25%;
+    }
+}
+
+
+@media (max-width : 991px){
+    .box-search-advance .box-search .item-search{
+        width: 50%;
+        position: relative;
+        padding: 0px 27px;
+        margin-bottom: 15px;
+    }
+    .box-search-advance .box-search .item-search:nth-child(2)::before{
+        display: none;
+    }
+}
+
+@media (max-width : 575px){
+    .box-search-advance .box-search .item-search{
+        width: 100%;
+        border-bottom: 1px solid var(--bs-border-color);
+        padding: 10px;
+    }
+    .box-search-advance .box-search .item-search::before{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

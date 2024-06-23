@@ -1,0 +1,120 @@
+.popular {
+    padding: 50px 0px;
+}
+
+.popular .card {
+    padding: 5px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    overflow: hidden;
+}
+
+.popular .card:hover{
+    transform: translateY(-10px);
+    transition: 0.2s ease-in;
+    
+}
+
+
+.popular .card:hover .card-title {
+    color:var(--primaryClr)
+}
+
+.popular .card img {
+    transition: all 0.5s ease 0s;
+}
+
+.popular .card:hover img {
+    transform: scale(1.1);
+}
+
+.popular .card .card-body .badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: var(--bodyText);
+}
+
+
+
+.popular .card .card-body .River{
+    background-color: #ffebf5 !important;
+    color:#cf3881 !important;
+}
+
+.popular .card .card-body .Wildlife{
+    background-color: #4ba7fc !important;
+    color:#e6f7f4 !important;
+}
+
+.popular .card .card-body .Escorted{
+    background-color: #e8edf1 !important;
+    color:#4f5e71 !important;
+}
+
+.popular .card .card-body .Rail{
+    background-color: #fc961b !important;
+    color:#ffffff !important;
+}
+
+.popular .card .card-body .Tour{
+    background-color: #6088c4 !important;
+    color:#ffffff !important;
+}
+
+.popular .card .card-body .card-title{
+    font-size: var(--bodyText);
+    font-weight: bold;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 10px;
+
+    
+}
+
+.popular .card .card-body .card-text {
+    font-size: 13px;
+    padding: 10px 0px;
+    line-height: 1.3em;
+    position: relative;
+    color:#4f5e71;
+}
+
+ 
+.popular .card .card-body .card-text i {
+    position: absolute;
+    top: 15px;
+}
+
+
+.popular .card .card-body .text {
+    margin-left: 16px;
+    display: block;
+    font-size: 13px;
+}
+
+.popular .card .card-body .reviwe {
+    margin-bottom: 12px;
+}
+.popular .card .card-body .reviwe i {
+    color:var(--primaryClr)
+}
+
+.popular .card .card-footer  {
+    background: none;
+}
+
+.popular .card .card-footer p  {
+    font-size: var(--bodyText);
+    color:#4f5e71
+}
+
+.popular .card .card-footer p strong {
+    font-size: var(--bodyText);
+    color:black;
+    font-weight: bold;
+}
+
+
+
+
+
